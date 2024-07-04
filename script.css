@@ -1,0 +1,914 @@
+:root {
+  --cor-primaria: black;
+  --cor-secundaria: #e50914;
+  --cor-terciaria: #fff;
+}
+
+.bg-header {
+  background-color: var(--cor-primaria);
+}
+
+#headercolor {
+  color: white;
+}
+
+.nav-link {
+  color: rgb(255, 255, 255);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--cor-secundaria);
+}
+
+.receitas-item div img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.fundo-principal {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/img\ principal.png);
+  height: 530px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.intersec {
+  background-image: url(img/fundooooooo\ net.png);
+  height: 550px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 200px;
+  color: white;
+}
+
+h1 {
+  color: #fff;
+  padding-top: 240px;
+}
+
+.Pesquisado {
+  background-color: #e50914;
+}
+
+.navbar-nav {
+  margin-left: 600px;
+}
+
+.list-group {
+  width: 300px;
+}
+
+/* booootao 1 */
+
+/* this is a recreation of twitter search in css */
+.form {
+  --input-text-color: #fff;
+  --input-bg-color: #28354200;
+  --focus-input-bg-color: transparent;
+  --text-color: #949faa;
+  --active-color: var(--cor-secundaria);
+  --width-of-input: 200px;
+  --inline-padding-of-input: 1.2em;
+  --gap: 0.9rem;
+}
+/* form style */
+.form {
+  font-size: 0.9rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  width: var(--width-of-input);
+  position: relative;
+  isolation: isolate;
+}
+/* a fancy bg for showing background and border when focus. */
+.fancy-bg {
+  position: absolute;
+  width: 100%;
+  inset: 0;
+  background: var(--input-bg-color);
+  border-radius: 30px;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+/* label styling */
+label {
+  width: 100%;
+  padding: 0.8em;
+  height: 40px;
+  padding-inline: var(--inline-padding-of-input);
+  display: flex;
+  align-items: center;
+}
+
+.search,
+.close-btn {
+  position: absolute;
+}
+/* styling search-icon */
+.search {
+  fill: var(--text-color);
+  left: var(--inline-padding-of-input);
+}
+/* svg -- size */
+svg {
+  width: 17px;
+  display: block;
+}
+/* styling of close button */
+.close-btn {
+  border: none;
+  right: var(--inline-padding-of-input);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0.1em;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--active-color);
+  opacity: 0;
+  visibility: hidden;
+}
+/* styling of input */
+.input {
+  color: var(--input-text-color);
+  width: 100%;
+  margin-inline: min(2em, calc(var(--inline-padding-of-input) + var(--gap)));
+  background: none;
+  border: none;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--text-color);
+}
+/* input background change in focus */
+.input:focus ~ .fancy-bg {
+  border: 1px solid var(--active-color);
+  background: var(--focus-input-bg-color);
+}
+/* search icon color change in focus */
+.input:focus ~ .search {
+  fill: var(--active-color);
+}
+/* showing close button when typing */
+.input:valid ~ .close-btn {
+  opacity: 1;
+  visibility: visible;
+}
+/* this is for the default background in input,when selecting autofill options -- you can remove this code if you do not want to override the browser style.  */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
+}
+
+/* noticias */
+
+section {
+  padding: 10px 40px;
+}
+.noticias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.noticias h2 {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.box {
+  height: 100px;
+}
+
+#ftperso {
+  object-fit: cover;
+  height: 200px;
+}
+
+.news {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#titulo {
+  color: #e50914;
+}
+
+#seriedomes {
+  object-fit: cover;
+  height: 300px;
+}
+#botaon {
+  background-color: black;
+  border: black;
+  padding: 5px 20px;
+}
+
+#botaon:hover {
+  background-color: #e50914;
+  box-shadow: 0 0 10px #87040b;
+}
+
+#next {
+  background-color: #e50914;
+  box-shadow: 0 0 10px #87040b;
+  border: #e50914;
+}
+
+#fundo {
+  background-color: var(--cor-secundaria);
+  border: #e50914;
+}
+
+/* botaoooooooo222222 */
+#color {
+  color: #e50914;
+}
+
+/* foooooooooooooooooooooter */
+
+footer {
+  background-color: var(--cor-primaria);
+  color: var(--cor-terciaria);
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+}
+
+footer img {
+  width: 150px;
+}
+
+.card-img-top {
+  object-fit: cover;
+}
+
+.group {
+  display: flex;
+  line-height: 28px;
+
+  align-items: center;
+  position: relative;
+  max-width: 190px;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: black;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.input::placeholder {
+  color: #9e9ea7;
+}
+
+.input:focus,
+input:hover {
+  outline: none;
+  border-color: #450205;
+  background-color: #fff;
+  box-shadow: 0 0 20 #87040b;
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+}
+
+.pg {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.pesquisa {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.col {
+  display: flex;
+  align-items: stretch;
+}
+
+/* Mensagens Interação */
+
+.box-msg {
+  border: 1px solid #919090;
+  padding: 10px;
+  border-radius: 10px;
+  width: 40%;
+  font-size: 18px;
+  border-color: white;
+}
+
+hr {
+  padding: 10px;
+  margin: 0;
+}
+
+.msg-pessoa {
+  display: flex;
+  justify-content: space-between;
+}
+
+.maininteracao {
+  background-color: black;
+}
+
+.row {
+  justify-content: space-around;
+}
+
+.par {
+  /* display: flex; */
+  justify-content: center;
+  margin: 20px 0;
+  margin-left: 150px;
+}
+
+#impar {
+  margin-right: 150px;
+}
+
+.h2i {
+  margin: 1px;
+}
+
+#botaoni {
+  background-color: #e50914;
+  box-shadow: 0 0 10px #87040b;
+  border: #e50914;
+  margin-bottom: 140px;
+}
+
+.mainvo {
+  background-color: black;
+}
+
+#headercolor {
+  color: black;
+}
+
+#ultimasec {
+  margin-top: 35px;
+  padding-bottom: 40px;
+}
+
+#emcartaz {
+  margin-top: 50px;
+}
+
+#fundo2 {
+  background-color: #e50914;
+  border: #e50914;
+  text-align: center;
+}
+
+#anu1 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#anu0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.cartaz {
+  width: 75%;
+}
+
+.cartaz img {
+  width: 100%;
+}
+
+article img {
+  width: 21%;
+}
+
+article h2 {
+  width: 100%;
+}
+
+#ppigual {
+  object-fit: cover;
+  height: 200px;
+}
+
+#penutsec {
+  margin-top: 30px;
+}
+
+.box-msg {
+  transition: box-shadow 0.3s;
+}
+
+.box-msg:hover {
+  box-shadow: 0 0px 20px #e50914;
+  border-color: #e50914;
+}
+
+footer {
+  background-color: black;
+  padding: 50px 0;
+}
+.container-footer {
+  max-width: 1400px;
+  padding: 0 4%;
+  margin: auto;
+}
+.row-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 500;
+  position: relative;
+  text-transform: uppercase;
+}
+.footer-col ul {
+  list-style: none;
+}
+.footer-col ul li {
+  margin: 10px 0;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #cecdcd;
+  padding-left: 10px;
+}
+
+.imgigual {
+  height: 200px;
+}
+
+.card-sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.anuncio {
+  margin-top: 26px;
+  margin-left: 20px;
+}
+
+#sec2interaçao {
+  padding: 20px 20px;
+}
+
+.h3inte {
+  text-align: center;
+
+  color: white;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: black;
+  border-radius: 8px;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+th {
+  background-color: #e50914;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+  background-color: #1c1c1c;
+}
+
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.156);
+}
+
+#secjogos {
+  color: white;
+  padding-top: 60px;
+  padding-left: 80px;
+}
+
+.card1 {
+  background-color: black;
+  border: 1px solid #e50914;
+  color: white;
+  text-align: center;
+  transition: border-color 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.card2 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  transition: border-color 0.3s ease;
+  width: 200px;
+}
+
+.col{
+  display: flex;
+  justify-content: center;
+}
+
+.card1:hover {
+  border-color: #e50914;
+  box-shadow: 0 0 30px #e509148e;
+}
+
+#botaon1 {
+  background-color: #e50914;
+  box-shadow: 0 0 15px #e50914a1;
+  border: #e50914;
+}
+
+.lancamento {
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.seclancamento {
+  color: white;
+
+  padding-top: 40px;
+}
+
+.zoom-img {
+  transition: transform 0.2s ease-out;
+}
+
+.zoom-img:hover {
+  transform: scale(1.1);
+}
+
+.content7 {
+  display: flex;
+
+  margin-bottom: 20px;
+}
+
+.text7,
+.text8 {
+  padding-left: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text8 {
+  padding-top: 20px;
+}
+
+.content8 {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 20px;
+}
+
+.st9 {
+  display: flex;
+  align-items: center;
+}
+
+.text8 {
+  padding-right: 20px;
+}
+
+.ultsecsobre {
+  margin-top: 80px;
+  color: white;
+}
+
+.mainsobre {
+  background-color: black;
+}
+
+.text9 {
+  padding-right: 10px;
+  padding-left: 20px;
+  color: white;
+}
+
+.h5padd {
+  padding-top: 20px;
+}
+
+.st9 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.icon33 {
+  margin-left: 80px;
+}
+
+.form-sub img {
+  margin-left: 50px;
+}
+
+.bi-facebook,
+.bi-instagram,
+.bi-twitter,
+.bi-youtube {
+  color: #e50914;
+}
+
+.netflixlogo {
+  margin-left: 10px;
+}
+
+.tt {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.net-logo {
+  width: 70%;
+}
+
+.twitter {
+  display: flex;
+  align-items: stretch;
+  gap: 50px;
+}
+
+.anunnet {
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+}
+
+.product-container {
+    display: flex;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-moletom-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.product-details {
+    flex: 1;
+    padding: 20px;
+}
+
+.product-title {
+    margin: 0 0 10px;
+}
+
+.product-price {
+    margin: 5px 0;
+}
+
+.product-size-label {
+    margin: 5px 0;
+}
+
+.product-size-options {
+    margin: 10px 0;
+}
+
+.product-size-button {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: none;
+    cursor: pointer;
+}
+
+.product-size-button:hover {
+    background: #ddd;
+}
+
+.product-add-to-bag {
+    margin-top: 20px;
+    padding: 10px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.cart-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.cart-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cart-close:hover,
+.cart-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.cart-image {
+    max-width: 80px;
+    height: auto;
+}
+
+.cart-details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.cart-title, .cart-size, .cart-weight, .cart-price {
+    margin: 5px 0;
+}
+
+.cart-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.cart-quantity-button {
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.cart-remove {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+.cart-subtotal {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.cart-checkout {
+    margin-top: 20px;
+    padding: 10px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.fundoshop{
+  background-image: url(img/fundosho.webp);
+  height: 600px;
+}
+
+.secmoletom{
+ margin-top: 30px;
+}
+
+
+.h2lideranca{
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+ margin-bottom: 10px;
+
+  }
+
+  .ultimasecshop{
+  margin-bottom: 40px;
+  }
+
+ 
+
+
+
+
+
+
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+  }
+}
+
+/* Responsivo */
+@media (max-width: 800px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .footer-col {
+    width: 100%;
+  }
+}
